@@ -50,6 +50,11 @@ print(f"PyTorch: {torch.__version__}")
 print(f"GPU Disponível: {torch.cuda.is_available()}")
 ```
 
+## Executar Jupyter
+```bash
+jupyter lab
+```
+
 
 # Acesso ao Google Colab
 O [Google Colab](https://colab.research.google.com/) é um ambiente gratuito de Jupyter Notebook que roda na nuvem e oferece acesso a GPUs e TPUs.
