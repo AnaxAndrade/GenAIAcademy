@@ -4,14 +4,13 @@ from sklearn.model_selection import train_test_split
 from tensorflow import keras
 from tensorflow.keras import layers
 
-# 1. Carregar dataset de câncer de mama
+# 1.1 Carregar dataset de câncer de mama
 data = load_breast_cancer()
 X = data.data        # matriz de features (569 x 30)
 y = data.target      # 0 = maligno, 1 = benigno
 
-# Dividir entre treino e teste
+# 1.2 Dividir entre treino e teste
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-
 
 model = keras.Sequential([
     layers.Dense(16, activation='relu', input_shape=(X_train.shape[1],)),  # 30 -> 16 neurónios
