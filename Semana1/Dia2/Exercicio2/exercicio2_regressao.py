@@ -14,7 +14,7 @@ y = data['Sales'].values  # vendas
 # 2. Inicializar parâmetros
 beta0 = 0.0
 beta1 = 0.0
-alpha = 0.001
+alpha = 0.00001
 num_iters = 1000
 
 n = len(X)  # número de exemplos
