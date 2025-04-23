@@ -1,0 +1,5 @@
+pandas
+scikit-learn
+spacy==3.7.2
+spacy-lookups-data
+pyLDAvis
